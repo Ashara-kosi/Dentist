@@ -1,19 +1,28 @@
 .banner {
     background-image: url(../images/banner.png);
     height: 702px;
+    width: 100%;
+    /* background-size:contain;
+    background-repeat: no-repeat; */
 }
 .banner1{
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     width: 500px;
+    margin-left: 0px;
+    padding: 58px;
     
+}
+.head1{
+    width: 90%;
+    padding-left: 20px;
 }
 .latis{
     font-family:;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vw;
     line-height: 50px;
     display: flex;
     align-items:top;
@@ -26,6 +35,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 35px;
+    padding-bottom: 25px;
     
 }
 .dento{
@@ -66,30 +76,56 @@
 }
 
 .image1 img{
-    height: auto;
-    width: 410px;
-    padding: 46px;
-    max-width:100%
+    width: 450px;
+    max-width:100%;
 }
 .image2 img{
-    height: auto;
     width: 500px;
-    padding-right: 20px;
     max-width:100%;
+    height:300px;
 }
 .aboutus{
     text-align: left;
-    justify-content: right;
+    margin-top: 36px;
+    margin-left: 42px;
+    padding: 0px 0px 0px;
+}
     
+
+.aboutus span h4{
+    font-family: Muli;
+    color: #3E3655;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+
+}
+.small1{
+    color:#3E3655;
+    font-family: Muli;
+    font-size: 15px;
+    margin: 0px 0px 15px;
 }
 .service{
-
+    color:#3E3655;
+    font-family: Muli;
+    padding-top: 24px;
+}
+.service span h4{
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 .started{
     background: #3E3655;
     display: flex;
     flex-direction: row;
     color: white;
+    font-family: Muli;
 }
 .stage1 img{
     width: 500px;
@@ -101,8 +137,19 @@
 .stage0{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content:center;
+    font-family: Muli;
+    margin-left: 20px;
 
+}
+.stage0 span h5{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+}
+.stage0 span h6{
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 .tooth img{
     padding: 20px;
@@ -111,8 +158,22 @@
 
 }
 .tooth1{
-    margin-left: 87px;
-    padding: 68px;
+    /* margin-left: 87px;
+    padding: 68px; */
+    font-family: Muli;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    
+}
+.tooth1 span h3{
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+}
+.tooth1 span h5{
+    color: #4F4F4F;
     
 }
 .book1{
@@ -130,13 +191,41 @@
     text-align: center;
     width: fit-content;
     height: 250px;
-    padding: 30px;
+    /* padding: 30px; */
+}
+.news{
+    color:#3E3655 ;
+    font-weight: 500;
+    padding: 20px;
+}
+.register{
+    background:#3E3655 ;
+    color: white;
 }
 .footer{
     background: #3E3655;
     display: flex;
     flex-direction: row;
-    width: auto;
+    height: 40px;
+    padding: 0px;
+    justify-content: space-evenly;
+    justify-self:center;
+}
+.font{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+.font img{
+    width: 30px;
+    height:25px;
+    max-width: 100%;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 
@@ -146,7 +235,7 @@
 
 
 
-
+/*
 
 @media (max-width: 460px) { 
     .head1{
@@ -157,4 +246,74 @@
     }
 
 }
+*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+    /* body {
+        margin: 0px 0px;
+        max-width: 320px;
+    }
+    .banner {
+        height: 502px;
+        background-size:contain;
+        background-repeat: no-repeat;
+    } */
 
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
